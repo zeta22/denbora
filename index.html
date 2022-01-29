@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>DENBORA SESSION BAR</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="icon" href="./assets/denbora-valve.png">
+
+<style>
+    body, h1, h5 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body, html {
+        height: 100%
+    }
+
+    .bgimg {
+        /*background-image: url("https://adwallpapers.xyz/uploads/posts/563-blur-dark-bar-or-cafe-at-night.jpg");*/
+        /*background-image: url('http://www.w3schools.com/w3images/onepage_restaurant.jpg');*/
+        background-image: url('./assets/BACKGROUND-02.jpg');
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+
+<script src="https://kit.fontawesome.com/30ff81033b.js" crossorigin="anonymous"></script>
+
+<body>
+
+<link rel="stylesheet" href="./customstyles.css">
+
+<div class="bgimg w3-display-container w3-text-white">
+    <div class="w3-display-topmiddle w3-jumbo">
+        <img src="./assets/denbora-logo.png" alt="" class="denbora-logo">
+    </div>
+    <div class="w3-display-topleft w3-container w3-xlarge">
+        <img src="./assets/denbora-valve.png" class="valve-image" alt="">
+    </div>
+
+    <div class="w3-display-topright w3-container w3-xlarge ml-cont">
+        <div class="menu-link-container">
+            <button onclick="document.getElementById('menu').style.display='block'" class="main-link">
+                <i class="fas fa-caret-right"></i> CARTA
+            </button>
+            <br/>
+            <a href="https://www.instagram.com/denbora.bar/" class="main-link pedidos-link" target="_blank">
+                <i class="fas fa-caret-right"></i> RESERVÁ POR MD
+            </a>
+
+            <div class="menu-link-items-container">
+                <!-- <button onclick="document.getElementById('delivery-area').style.display='block'" class=""> -->
+                <a href="https://goo.gl/maps/43hGNMPyx1gCYbaV8" target="_blank">
+                    <i class="fas fa-map-marker-alt social-icon"></i>
+                    Av. Tte. Gral. Donato Álvarez 640<br/>
+                    <span class="sub-note">(Ver en Google Maps)</span>
+                </a>
+                <div class="social-icons-container">
+                    <a href="https://www.instagram.com/denbora.bar/" class="social-icon-link" target="_blank">
+                        <i class="fab fa-instagram social-icon"></i>
+                    </a>
+                    <a href="https://www.facebook.com/D%C4%97nbora-Session-Bar-112014237002756"
+                       class="social-icon-link" target="_blank">
+                        <i class="fab fa-facebook social-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-display-bottommiddle w3-container w3-xlarge">
+        <img src="./assets/denbora-tiempo.png" class="fabrica-del-tiempo-label" alt="">
+    </div>
+
+    <div class="w3-display-bottomleft w3-container">
+        <p>
+
+        </p>
+        <!--
+        <p class="w3-xlarge">Lunes a Viernes - 10 PM a 01 AM | Sábados 10 PM a 01 AM</p>
+        <p class="w3-large">Av. Tte. Gral. Donato Álvarez 640</p>
+        -->
+    </div>
+
+    <div class="w3-display-bottomright w3-container w3-xlarge">
+
+    </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom" style="max-width: 670px;">
+        <div class="w3-container menu-section-header w3-display-container">
+            <span onclick="document.getElementById('menu').style.display='none'"
+                  class="w3-button w3-display-topright w3-large">x</span>
+            <!-- <h1>Sugerencias Denbora</h1> -->
+        </div>
+        <div class="w3-container w3-black" style="padding:0">
+            <img src="carta/c1.jpg" alt="" style="width:100%">
+        </div>
+
+        <div class="w3-container w3-black" style="padding:0">
+            <img src="carta/c2.jpg" alt="" style="width:100%">
+        </div>
+
+        <div class="w3-container w3-black" style="padding:0">
+            <img src="carta/c3.jpg" alt="" style="width:100%">
+        </div>
+
+    </div>
+</div>
+
+<div id="delivery-area" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom" style="width: 670px;">
+        <div class="w3-container w3-black">
+            <span onclick="document.getElementById('delivery-area').style.display='none'"
+                  class="w3-button w3-display-topright w3-large">x</span>
+            <h3>Zona de entrega</h3>
+        </div>
+        <div class="w3-container w3-black">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1c7O4hAcNXRpzXa1slqzoIU9iSKmfzw8s&ll=-34.61906646961469%2C-58.458717169598174&z=14"
+                    width="640" height="480"></iframe>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+

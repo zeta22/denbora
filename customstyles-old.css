@@ -1,0 +1,191 @@
+@font-face {
+    font-family: Bebas;
+    src: url(./fonts/BebasNeue-Regular.woff);
+}
+
+* {
+    font-family: Bebas;
+}
+
+.denbora-logo {
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    max-width: 400px;
+}
+
+.valve-image {
+    max-width: 200px;
+}
+
+
+/**** MENU SUPERIOR DERECHO, INCLUYE LINKS PRINCIPALES. Y EL MENU LATERAL ****/
+
+
+.menu-link-container {
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: right;
+    font-size: 70px;
+    color: rgb(225,156,197);
+    line-height: 1;
+}
+
+.menu-link-container button {
+    font-size: 70px;
+    padding-top: 10px;
+    color: rgb(225,156,197);
+    background-color: transparent;
+    border: none;
+    text-align: right;
+}
+
+.menu-link-container button:hover {
+    cursor: pointer;
+    color: rgb(127, 88, 225);
+}
+
+/**** MENU LATERAL DE TELEFONO, DIRECCION Y TODA ESA CHOTA ****/
+
+.menu-link-items-container button{
+    font-size: 45px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+.sub-note{
+    font-size: 15px;
+    vertical-align: 20px;
+}
+
+.menu-link-items-container{
+    font-size: 45px;
+    margin-top: 100px;
+    margin-right: 15px;
+}
+
+.fabrica-del-tiempo-label {
+    padding: 20px;
+    max-width: 500px;
+}
+
+.social-icons-container {
+
+}
+
+.social-icon {
+    padding-left: 15px;
+    font-size: 50px;
+}
+
+.social-icon-link {
+    text-decoration: none;
+    color: rgb(225,156,197);
+}
+
+.whatsapp-container {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.phone-number {
+
+}
+
+.social-icon-link:hover {
+    color: blueviolet;
+}
+
+.main-link, .main-link button {
+    background-color: black !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+.main-link:hover, .main-link button:hover {
+    background-color: #2b2b2b !important;
+}
+
+@media only screen and (max-width: 700px) {
+    .valve-image {
+        display: none;
+    }
+
+    .denbora-logo {
+        max-width: 240px;
+    }
+
+    .fabrica-del-tiempo-label {
+        display: none;
+    }
+
+    .menu-link-container {
+        margin-top: 160px;
+        text-align: center;
+    }
+
+    .menu-link-items-container button{
+        text-align: center;
+    }
+    .main-link{
+        margin-top: 15px;
+    }
+    .pedidos-link {
+        margin-top: 10px;
+    }
+
+    /* Fixes porque el fondo en mobile se ve para el orto */
+    .bgimg {
+        background: none;
+    }
+    body {
+        background-image: url('./assets/BACKGROUND-02.jpg');
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 465px){
+    .pedidos-link {
+        font-size: 46px;
+    }
+}
+
+
+
+
+
+/**************************************************************/
+
+.menu-section-header{
+    background-color: rgb(22, 20, 60);
+    color: aliceblue;
+}
+
+.table-separator {
+    background-color: rgba(56, 51, 154, 0.42);
+}
+
+.menu-table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.menu-table tr {
+    font-size: 20px;
+}
+
+.menu-table td {
+
+}
